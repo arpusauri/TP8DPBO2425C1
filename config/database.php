@@ -4,8 +4,8 @@ $username = "root";
 $password = "";
 $db_name = "tp_mvc25";
 
-$conn = new mysqli($servername, $username, $password, $db_name);
+$db = new mysqli($servername, $username, $password, $db_name);
 
-if ($conn->connect_error) {
+if ($db->connect_error) {
     die("Connection failed" . $conn->connect_error);
 };
