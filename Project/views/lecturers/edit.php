@@ -1,7 +1,8 @@
-<?php include "templates/header.php"; ?>
+<!-- header -->
+<?php include 'templates/header.php'; ?>
 
+<!-- body -->
 <div class="col-lg-6 m-auto">
-
   <form method="post" action="index.php?action=update">
     <br><br>
     <div class="card">
@@ -24,6 +25,17 @@
       <label> JOIN DATE: </label>
       <input type="date" name="join_date" value="<?= $data['join_date'] ?>" class="form-control" required> <br>
 
+      <label> DEPARTMENT: </label>
+      <select name="departmen_id" class="form-control" required>
+        <option value="">-- Select Department --</option>
+        <?php while ($row = $departments->fetch_assoc()): ?>
+          <option value="<?= $row['id'] ?>" <?= ($row['id'] == $data['department_id']) ? 'selected' : '' ?>>
+            <?= htmlspecialchars($row['name']) ?>
+          </option>
+        <?php endwhile; ?>
+      </select>
+      <br>
+
       <button class="btn btn-success" type="submit" name="submit">Submit</button><br>
       <a class="btn btn-info" href="index.php">Cancel</a><br>
 
@@ -32,4 +44,5 @@
 
 </div>
 
-<?php include "templates/footer.php"; ?>
+<!-- footer -->
+<?php include 'templates/footer.php'; ?>

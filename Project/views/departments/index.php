@@ -4,32 +4,26 @@
 <!-- body -->
 <div class="container my-4">
     <div class="col-1 my-3">
-        <a type="button" class="btn btn-primary" href="index.php?action=create">Add New</a>
+        <a type="button" class="btn btn-primary" href="index.php?module=department&action=create">Add New</a>
     </div>
     <table class="table">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>NAME</th>
-                <th>NIDN</th>
-                <th>PHONE</th>
-                <th>JOIN DATE</th>
-                <th>DEPARTMENT</th>
+                <th>DESCRIPTION</th>
                 <th>ACTIONS</th>
             </tr>
         </thead>
         <tbody>
-            <?php while ($row = $lecturers->fetch_assoc()): ?>
+            <?php while ($row = $departments->fetch_assoc()): ?>
                 <tr>
                     <td><?= $row['id'] ?></td>
                     <td><?= $row['name'] ?></td>
-                    <td><?= $row['nidn'] ?></td>
-                    <td><?= $row['phone'] ?></td>
-                    <td><?= $row['join_date'] ?></td>
-                    <td><?= $row['department_name'] ?></td>
+                    <td><?= $row['description'] ?></td>
                     <td>
-                        <a href="index.php?action=edit&id=<?= $row['id'] ?>" class="btn btn-sm btn-success">Edit</a>
-                        <a href="index.php?action=delete&id=<?= $row['id'] ?>" class="btn btn-sm btn-danger"
+                        <a href="index.php?module=department&action=edit&id=<?= $row['id'] ?>" class="btn btn-sm btn-success">Edit</a>
+                        <a href="index.php?module=department&action=delete&id=<?= $row['id'] ?>" class="btn btn-sm btn-danger"
                             onclick="return confirm('Are you sure?');">
                             Delete
                         </a>
