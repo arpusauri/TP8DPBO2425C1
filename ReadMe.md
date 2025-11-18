@@ -9,6 +9,7 @@ Saya Arya Purnama Sauri dengan NIM 2408521 mengerjakan Tugas Praktikum 8 dalam m
 `tp_mvc25`
 
 ### Relasi
+<img width="759" height="209" alt="relasi_db" src="https://github.com/user-attachments/assets/fcb961b1-fcc3-4d08-ac4d-f3c1e0415c09" />
 
 ### Struktur Tabel
 Memiliki 3 entitas (tabel) yaitu `lecturers`, `departments`, dan `courses`.
@@ -205,3 +206,4 @@ Mengatur alur CRUD mata kuliah.
       4. Halaman refresh otomatis
 
 # Dokumentasi
+https://github.com/user-attachments/assets/e6fc51fb-d730-4126-afc7-93332f8eab2a
