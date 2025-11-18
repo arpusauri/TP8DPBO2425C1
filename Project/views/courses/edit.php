@@ -6,8 +6,8 @@
     <form method="post" action="index.php?module=course&action=update">
         <div class="card my-4">
             <div class="card-header bg-warning">
-                <h2 class="text-white">Edit Course</h2>
-            </div>
+                <h1 class="text-white text-center"> Update Course </h1>
+            </div><br>
 
             <input type="hidden" name="id" value="<?= $data['id'] ?>">
 

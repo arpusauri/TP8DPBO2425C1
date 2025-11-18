@@ -6,7 +6,6 @@
   <form method="post" action="index.php?action=update">
     <br><br>
     <div class="card">
-
       <div class="card-header bg-warning">
         <h1 class="text-white text-center"> Update Lecturer </h1>
       </div><br>

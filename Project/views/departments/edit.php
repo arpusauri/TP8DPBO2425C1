@@ -1,13 +1,13 @@
 <!-- header -->
-<?php include "templates/header.php"; ?>
+<?php include 'templates/header.php'; ?>
 
 <!-- body -->
 <div class="col-lg-6 m-auto">
     <form method="post" action="index.php?action=update&module=department">
         <div class="card my-4">
             <div class="card-header bg-warning">
-                <h2 class="text-white">Edit Department</h2>
-            </div>
+                <h1 class="text-white text-center"> Update Department </h1>
+            </div><br>
 
             <input type="hidden" name="id" value="<?= $data['id'] ?>">
 
@@ -24,4 +24,4 @@
 </div>
 
 <!-- footer -->
-<?php include "templates/footer.php"; ?>
+<?php include 'templates/footer.php'; ?>
