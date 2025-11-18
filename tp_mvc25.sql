@@ -21,12 +21,6 @@ SET time_zone = "+00:00";
 -- Database: `tp_mvc25`
 --
 
---
--- Buat database
---
-
-CREATE DATABASE tp_mvc25;
-
 -- --------------------------------------------------------
 
 --
